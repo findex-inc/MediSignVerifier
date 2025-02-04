@@ -2,23 +2,24 @@
 
   <PropertyGroup>
     <TargetFrameworks>netstandard2.1;net462</TargetFrameworks>
-    <Copyright>Copyright 2023+ Findex Inc.</Copyright>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
 
     <!--以下、nuget管理用-->
     <Id>SignatureVerifier</Id>
-    <Version>0.9.2</Version>
+    <Version>0.9.5</Version>
     <ReleaseNotes>JSONレポート出力時に日本語がUNICODEエスケープ文字になる問題に対応。</ReleaseNotes>
     <Company>FINDEX Inc.</Company>
     <Authors>FINDEX Inc.</Authors>
     <Owners>FINDEX Inc.</Owners>
-    <Description>署名XML検証ライブラリ</Description>
-    <RepositoryUrl>http://git.pscad.co.jp:8080/gitbucket/DigitalSignature/ElectronicPrescriptionVerification</RepositoryUrl>
+    <Description>電子署名検証ライブラリ</Description>
+    <RepositoryUrl>https://github.com/findex-inc/MediSignVerifier</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <iconUrl>\\nuget.pscad.co.jp\Image\FINDEX_Icon_common.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <copyright>Copyright 2023</copyright>
+    <copyright>Copyright 2025+ Findex Inc.</copyright>
     <tags>署名XML 検証</tags>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>MediSignVerifier</Title>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.1|AnyCPU'">
