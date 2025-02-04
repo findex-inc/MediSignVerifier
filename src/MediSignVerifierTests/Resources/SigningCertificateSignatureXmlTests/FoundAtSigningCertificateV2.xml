@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Document"
+  xsi:noNamespaceSchemaLocation="EP.xsd">
+  <Prescription>
+    <PrescriptionManagement id="PrescriptionManagement">
+      <Version Value="EPS1.0" />
+    </PrescriptionManagement>
+    <PrescriptionDocument id="PrescriptionDocument">
+      <!-- test for SigningCertificateSignatureXmlTests. -->
+    </PrescriptionDocument>
+    <PrescriptionSign>
+      <xs:Signature xmlns:xs="http://www.w3.org/2000/09/xmldsig#" Id="PrescriptionSign">
+        <xs:SignedInfo Id="idTEST0005-SignedInfo">
+
+          <xs:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+          <xs:SignatureMethod
+            Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+
+          <xs:Reference
+            Id="idTEST0005-Reference1-Detached" URI="#PrescriptionDocument">
+            <!-- ダミー -->
+          </xs:Reference>
+
+          <xs:Reference
+            Id="idTEST0005-Reference2-KeyInfo" URI="#idTEST0005-KeyInfo">
+            <!-- ダミー -->
+          </xs:Reference>
+
+          <xs:Reference
+            Id="idTEST0005-Reference3-SignedProperties"
+            Type="http://uri.etsi.org/01903#SignedProperties"
+            URI="#idTEST0005-SignedProperties">
+            <!-- ダミー -->
+          </xs:Reference>.
+        </xs:SignedInfo>
+
+        <xs:SignatureValue Id="idTEST0005-SignatureValue">
+          <!-- テスト用なので中身不要 -->
+        </xs:SignatureValue>
+
+        <!--<xs:KeyInfo Id="idTEST0005-KeyInfo-unmatch">
+          <xs:X509Data>
+            <xs:X509Certificate>
+            </xs:X509Certificate>
+          </xs:X509Data>
+        </xs:KeyInfo>-->
+
+        <xs:Object xmlns:xa="http://uri.etsi.org/01903/v1.3.2#">
+          <xa:QualifyingProperties Id="idTEST0005-QualifyingProperties"
+            Target="#PrescriptionSign">
+
+            <xa:SignedProperties Id="idTEST0005-SignedProperties">
+              <xa:SignedSignatureProperties>
+                <xa:SigningTime>2022-09-07T08:08:01+00:00</xa:SigningTime>
+                <xa:SigningCertificateV2>
+                  <xa:Cert>
+                    <xa:CertDigest>
+                      <xs:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+                      <xs:DigestValue>NqeepkXkMTTnbn2s3W197fpOof0tj+Rd8JLII6BofmQ= </xs:DigestValue>
+                    </xa:CertDigest>
+                    <xa:IssuerSerialV2>
+                      MHAwaqRoMGYxCzAJBgNVBAYTAkpQMQ4wDAYDVQQKDAVNRURJUzEWMBQGA1UECwwNTUVESVMgSFBL
+                      SSBDQTEvMC0GA1UEAwwmSFBLSS0wMS1NZWRpc1NpZ25DQTItZm9yTm9uUmVwdWRpYXRpb24CAgFe
+                    </xa:IssuerSerialV2>
+                  </xa:Cert>
+                </xa:SigningCertificateV2>
+              </xa:SignedSignatureProperties>
+            </xa:SignedProperties>
+
+            <xa:UnsignedProperties>
+              <xa:UnsignedSignatureProperties>
+                <xa:CertificateValues>
+                  <xa:EncapsulatedX509Certificate id="illegal-cert-351">
+                    MIIFgjCCBGqgAwIBAgICAV8wDQYJKoZIhvcNAQELBQAwZjELMAkGA1UEBhMCSlAxDjAMBgNVBAoM
+                    BU1FRElTMRYwFAYDVQQLDA1NRURJUyBIUEtJIENBMS8wLQYDVQQDDCZIUEtJLTAxLU1lZGlzU2ln
+                    bkNBMi1mb3JOb25SZXB1ZGlhdGlvbjAeFw0yMjAyMDYxNTAwMDBaFw0yNzAyMDcxNDU5NTlaMGQx
+                    CzAJBgNVBAYTAkpQMSIwIAYDVQQKDBlNRURJUyBVTklWRVJTSVRZIEhPU1BJVEFMMRwwGgYDVQQD
+                    DBNTYW5qdXNoaSBLYWd1cmF6YWthMRMwEQYDVQQFEwpUZXN0MTE3MTIwMIIBIjANBgkqhkiG9w0B
+                    AQEFAAOCAQ8AMIIBCgKCAQEAy6PVZxPcrXC3jW+teT7YLvl2+0lfHRbZWjf56eMn8mRUKKNsuPAu
+                    tvSaTbRBL+E4S5HIzYR7dUtqqXnRg+xH1YPe2eaFAfzJFBNZggHTjYfV2wmX0kE/0sssjy5A1BUZ
+                    4zRN1+oGantT8CkLJD4EsTZX1LCNJwUsBpkzN6kyhc4HddG9M3ISGa0dMtP31L1XcjCs/cP3xCJb
+                    8Z5osEacccwVBaiL7CdpATEcro+xEJtYii0IibH9KJcrxOEbUkP8KWTzC2npwA+YauAmC6s8GfMr
+                    wAEb0U8x+v58gUe4hVJS6PmW3QhnwVHFKy5Yp6zbDxB2jEomOp8iIvsSUXBBMwIDAQABo4ICOjCC
+                    AjYwgcgGA1UdIwSBwDCBvYAUndYTUkXvvV54UshYjni8VB4/luahgaGkgZ4wgZsxCzAJBgNVBAYT
+                    AkpQMS8wLQYDVQQKDCZNaW5pc3RyeSBvZiBIZWFsdGgsIExhYm91ciBhbmQgV2VsZmFyZTE8MDoG
+                    A1UECwwzRGlyZWN0b3ItR2VuZXJhbCBmb3IgUG9saWN5IFBsYW5uaW5nIGFuZCBFdmFsdWF0aW9u
+                    MR0wGwYDVQQLDBRNSExXIEhQS0kgUm9vdCBDQSBWMoIBBDAdBgNVHQ4EFgQUwUIYMzPxAiX6Mwch
+                    BNWKrcAL4UUwDgYDVR0PAQH/BAQDAgZAMHIGA1UdEQRrMGmkZzBlMQswCQYDVQQGEwJKUDEhMB8G
+                    A1UECgwY5Yy755mC5oOF5aCx5aSn5a2m55eF6ZmiMR4wHAYDVQQDDBXnpZ7mpb3lnYLjgIDkuInl
+                    jYHlm5sxEzARBgNVBAUTClRlc3QxMTcxMjAwOwYDVR0fBDQwMjAwoC6gLIYqaHR0cDovL2NlcnQu
+                    bWVkaXMub3IuanAvc2lnbi9jcmwtc2lnbjIuY3JsMD0GA1UdCQQ2MDQwMgYGKIGFQgABMSgxJjAk
+                    oCIxIKAMBgoqgwiGkQ8BBgEBohAMDk1lZGljYWwgRG9jdG9yMEoGA1UdIAEB/wRAMD4wPAYMKoMI
+                    hpEPAQUBAQABMCwwKgYIKwYBBQUHAgEWHmh0dHA6Ly93d3cubWVkaXMub3IuanAvOF9ocGtpLzAN
+                    BgkqhkiG9w0BAQsFAAOCAQEAmUx6UQDm6HboCK39k2/6qL9uAB9kSQtlyLxQ8Jpwdb7Q8iqNfyyo
+                    ZXfMArjQpEcCQc63fsNoDItQfFjI8YJPMZExAVsPI1n/3NnelX00rxshPvZQvsryYntNUMykBbro
+                    hlKx1hQJFCIETzXeBKrNJIHTvy+WF/3nAsIp6hU3mu2y9qzPhX0UViIlJQbGEhIj5JXmNYaVpYwR
+                    DqOArUheAmbDevNNXKRsEfNICmtxotY1WlPdbneh3axHutxrzs5E4i+0XCr8m+C2Fz+bQoChiMTP
+                    5R4USWe3R3Nt+dNZjbj1OvEnLEUT5tOfpZ0KzXDJZht5DOHLUhtV6+WuI+6Yqw==
+                  </xa:EncapsulatedX509Certificate>
+                  <xa:EncapsulatedX509Certificate>
+                    MIIFgjCCBGqgAwIBAgICAV4wDQYJKoZIhvcNAQELBQAwZjELMAkGA1UEBhMCSlAxDjAMBgNVBAoM
+                    BU1FRElTMRYwFAYDVQQLDA1NRURJUyBIUEtJIENBMS8wLQYDVQQDDCZIUEtJLTAxLU1lZGlzU2ln
+                    bkNBMi1mb3JOb25SZXB1ZGlhdGlvbjAeFw0yMjAyMDYxNTAwMDBaFw0yNzAyMDcxNDU5NTlaMGQx
+                    CzAJBgNVBAYTAkpQMSIwIAYDVQQKDBlNRURJUyBVTklWRVJTSVRZIEhPU1BJVEFMMRwwGgYDVQQD
+                    DBNTYW5qdXNoaSBLYWd1cmF6YWthMRMwEQYDVQQFEwpUZXN0MTE3MTIwMIIBIjANBgkqhkiG9w0B
+                    AQEFAAOCAQ8AMIIBCgKCAQEAy6PVZxPcrXC3jW+teT7YLvl2+0lfHRbZWjf56eMn8mRUKKNsuPAu
+                    tvSaTbRBL+E4S5HIzYR7dUtqqXnRg+xH1YPe2eaFAfzJFBNZggHTjYfV2wmX0kE/0sssjy5A1BUZ
+                    4zRN1+oGantT8CkLJD4EsTZX1LCNJwUsBpkzN6kyhc4HddG9M3ISGa0dMtP31L1XcjCs/cP3xCJb
+                    8Z5osEacccwVBaiL7CdpATEcro+xEJtYii0IibH9KJcrxOEbUkP8KWTzC2npwA+YauAmC6s8GfMr
+                    wAEb0U8x+v58gUe4hVJS6PmW3QhnwVHFKy5Yp6zbDxB2jEomOp8iIvsSUXBBMwIDAQABo4ICOjCC
+                    AjYwgcgGA1UdIwSBwDCBvYAUndYTUkXvvV54UshYjni8VB4/luahgaGkgZ4wgZsxCzAJBgNVBAYT
+                    AkpQMS8wLQYDVQQKDCZNaW5pc3RyeSBvZiBIZWFsdGgsIExhYm91ciBhbmQgV2VsZmFyZTE8MDoG
+                    A1UECwwzRGlyZWN0b3ItR2VuZXJhbCBmb3IgUG9saWN5IFBsYW5uaW5nIGFuZCBFdmFsdWF0aW9u
+                    MR0wGwYDVQQLDBRNSExXIEhQS0kgUm9vdCBDQSBWMoIBBDAdBgNVHQ4EFgQUwUIYMzPxAiX6Mwch
+                    BNWKrcAL4UUwDgYDVR0PAQH/BAQDAgZAMHIGA1UdEQRrMGmkZzBlMQswCQYDVQQGEwJKUDEhMB8G
+                    A1UECgwY5Yy755mC5oOF5aCx5aSn5a2m55eF6ZmiMR4wHAYDVQQDDBXnpZ7mpb3lnYLjgIDkuInl
+                    jYHlm5sxEzARBgNVBAUTClRlc3QxMTcxMjAwOwYDVR0fBDQwMjAwoC6gLIYqaHR0cDovL2NlcnQu
+                    bWVkaXMub3IuanAvc2lnbi9jcmwtc2lnbjIuY3JsMD0GA1UdCQQ2MDQwMgYGKIGFQgABMSgxJjAk
+                    oCIxIKAMBgoqgwiGkQ8BBgEBohAMDk1lZGljYWwgRG9jdG9yMEoGA1UdIAEB/wRAMD4wPAYMKoMI
+                    hpEPAQUBAQABMCwwKgYIKwYBBQUHAgEWHmh0dHA6Ly93d3cubWVkaXMub3IuanAvOF9ocGtpLzAN
+                    BgkqhkiG9w0BAQsFAAOCAQEAmUx6UQDm6HboCK39k2/6qL9uAB9kSQtlyLxQ8Jpwdb7Q8iqNfyyo
+                    ZXfMArjQpEcCQc63fsNoDItQfFjI8YJPMZExAVsPI1n/3NnelX00rxshPvZQvsryYntNUMykBbro
+                    hlKx1hQJFCIETzXeBKrNJIHTvy+WF/3nAsIp6hU3mu2y9qzPhX0UViIlJQbGEhIj5JXmNYaVpYwR
+                    DqOArUheAmbDevNNXKRsEfNICmtxotY1WlPdbneh3axHutxrzs5E4i+0XCr8m+C2Fz+bQoChiMTP
+                    5R4USWe3R3Nt+dNZjbj1OvEnLEUT5tOfpZ0KzXDJZht5DOHLUhtV6+WuI+6Yqw==
+                  </xa:EncapsulatedX509Certificate>
+                </xa:CertificateValues>
+              </xa:UnsignedSignatureProperties>
+            </xa:UnsignedProperties>
+
+          </xa:QualifyingProperties>
+        </xs:Object>
+      </xs:Signature>
+
+    </PrescriptionSign>
+  </Prescription>
+</Document>

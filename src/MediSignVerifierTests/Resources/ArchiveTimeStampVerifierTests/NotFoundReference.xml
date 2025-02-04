@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Document" xsi:noNamespaceSchemaLocation="ED.xsd">
+	<DispensingManagement id="DispensingManagement">
+		<Version Value="EPD1.0"/>
+	<DispensingId Value="2b93bf48-5ce0-4a2b-b977-df30171ea5bb" /></DispensingManagement>
+<DispensingSign><xs:Signature xmlns:xs="http://www.w3.org/2000/09/xmldsig#" Id="DispensingSign"><xs:SignedInfo Id="id3f33acb9-SignedInfo"><xs:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><xs:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/></xs:SignedInfo><xs:SignatureValue Id="id07b7a513-SignatureValue">E42uefuMYbWw2EILx9lnrh+rX3OqsC6EwZ9zbqFjLWortwC/CKk2Vk4n4pTm2ORhL4WuOotnGAgl
+KOjyqsjYOnywf7Geu60E2MT7OszySmPFQjPraKAr9vWZM+hidfLge/E3mhcFZSYXzCGjA7Yv8t02
+1KJMKLLls9mEQM0DIUWDumPBvkd429e/r2lHZH6l45jXHmNezUwAyqF5oKaqYZVrHMbl7Wq/ssXZ
+9BHaxzynrQbGs9HUfBvGwa/zvugfp98F386qQtf6tfvxjhpJ1/DDvBdXxcQNSkHWW5RuxxtCOG3E
+bamjWxDgmRl2Xb16UcjsJEqNGrRnvyKlYMg31Q==
+</xs:SignatureValue></xs:Signature></DispensingSign>
+</Document>

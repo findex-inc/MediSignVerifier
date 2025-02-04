@@ -1,0 +1,66 @@
+﻿root = true
+
+[*]
+charset = utf-8-bom
+insert_final_newline = true
+
+# Configuration files
+[*.{yaml,yml,json}]
+indent_size = 2
+indent_style = space
+
+# XML files
+[*.{xml,config}]
+indent_size = 2
+indent_style = space
+
+[*.{sln,csproj,props}]
+end_of_line = crlf
+indent_size = 2
+indent_style = space
+
+
+# C# ファイル
+[*.cs]
+
+# インデントと間隔
+indent_style = tab
+indent_size = 4
+tab_width = 4
+trim_trailing_whitespace = true
+
+
+#### .NET コーディング規則 ####
+
+# using の整理
+dotnet_separate_import_directive_groups = false
+dotnet_sort_system_directives_first = true
+
+#### C# 書式ルール ####
+
+# 改行設定
+csharp_new_line_before_open_brace = accessors,anonymous_methods,anonymous_types,lambdas,methods,object_collection_array_initializers,properties,types
+
+
+[*.cs]
+
+##> IDE0055: Fix Formatting
+#dotnet_diagnostic.IDE0055.severity = warning
+
+##> IDE0040: Accessibility modifiers required
+#dotnet_diagnostic.IDE0040.severity = warning
+
+##> IDE0051: Remove unused private member
+#dotnet_diagnostic.IDE0051.severity = warning
+
+##> IDE0052: Remove unread private member
+#dotnet_diagnostic.IDE0052.severity = warning
+
+##> IDE0059: Remove unnecessary value assignment
+#dotnet_diagnostic.IDE0059.severity = warning
+
+##> IDE0060: Remove unused parameter
+#dotnet_diagnostic.IDE0060.severity = warning
+
+##> IDE0100: Remove unnecessary equality operator
+#dotnet_diagnostic.IDE0100.severity = warning

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Document" xsi:noNamespaceSchemaLocation="ED.xsd">
+	<DispensingManagement id="DispensingManagement">
+		<Version Value="EPD1.0"/>
+	<DispensingId Value="2b93bf48-5ce0-4a2b-b977-df30171ea5bb" /></DispensingManagement>
+<DispensingSign><xs:Signature xmlns:xs="http://www.w3.org/2000/09/xmldsig#" Id="DispensingSign"><xs:SignedInfo Id="id3f33acb9-SignedInfo"><xs:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/><xs:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><xs:Reference Id="id82910f8a-Reference1-Detached" URI="#Dispensing"><xs:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><xs:DigestValue>UlJ8HYFiR6ugkO3T+87JNcLmDdFoceIZ5HZrWDwUZGc=
+</xs:DigestValue></xs:Reference><xs:Reference Id="id5d083e63-Reference2-KeyInfo" URI="#id1840166b-KeyInfo"><xs:Transforms><xs:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></xs:Transforms><xs:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><xs:DigestValue>1YUl2EezkB4eypYPKl5rksGTzlNm8+BdI0eo/8CUWn0=
+</xs:DigestValue></xs:Reference><xs:Reference Id="id6ea12df1-Reference3-SignedProperties" Type="http://uri.etsi.org/01903#SignedProperties" URI="#idafb3837b-SignedProperties"><xs:Transforms><xs:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></xs:Transforms><xs:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><xs:DigestValue>D/xXegluIa2u5XQHEDmfLjuqwv/Xq8xPlNJQbYXr+Xg=
+</xs:DigestValue></xs:Reference></xs:SignedInfo><xs:SignatureValue Id="id07b7a513-SignatureValue">E42uefuMYbWw2EILx9lnrh+rX3OqsC6EwZ9zbqFjLWortwC/CKk2Vk4n4pTm2ORhL4WuOotnGAgl
+KOjyqsjYOnywf7Geu60E2MT7OszySmPFQjPraKAr9vWZM+hidfLge/E3mhcFZSYXzCGjA7Yv8t02
+1KJMKLLls9mEQM0DIUWDumPBvkd429e/r2lHZH6l45jXHmNezUwAyqF5oKaqYZVrHMbl7Wq/ssXZ
+9BHaxzynrQbGs9HUfBvGwa/zvugfp98F386qQtf6tfvxjhpJ1/DDvBdXxcQNSkHWW5RuxxtCOG3E
+bamjWxDgmRl2Xb16UcjsJEqNGrRnvyKlYMg31Q==
+</xs:SignatureValue><xs:KeyInfo Id="id1840166b-KeyInfo"><xs:X509Data><xs:X509Certificate>MIIFeDCCBGCgAwIBAgICAWQwDQYJKoZIhvcNAQELBQAwZjELMAkGA1UEBhMCSlAxDjAMBgNVBAoM
+BU1FRElTMRYwFAYDVQQLDA1NRURJUyBIUEtJIENBMS8wLQYDVQQDDCZIUEtJLTAxLU1lZGlzU2ln
+bkNBMi1mb3JOb25SZXB1ZGlhdGlvbjAeFw0yMjAyMDYxNTAwMDBaFw0yNzAyMDcxNDU5NTlaMGEx
+CzAJBgNVBAYTAkpQMSIwIAYDVQQKDBlNRURJUyBVTklWRVJTSVRZIEhPU1BJVEFMMRkwFwYDVQQD
+DBBTaGlqdSBLYWd1cmF6YWthMRMwEQYDVQQFEwpUZXN0MzE3MDQ0MIIBIjANBgkqhkiG9w0BAQEF
+AAOCAQ8AMIIBCgKCAQEAibbTzrF2p/cZD7J8pUhVCBIY+NUjFxIYwT33HmcC9M56GmEdbcdJSuZU
+laDbvRtnsmQID3j41yQklo3+FnhVzWlsytGv4l4gWTyI6z7JIl20srJ4wLN/nWeqCOWBbnuSQgbR
+ECM8s1rn4tSL5ScLhKdlzNoyjzspIdRjSUfQlsjD1kt0Y2bkdR+g1jEMEthJsBhI13FFgNILVUIe
+G3Qfjh0fQCFG57NnJK5pZOBvuAsJq64b0CQnQZ3PPV9y4oOrfdrJsn58mO4lai0B/GKWEoW+8+AB
+//CTYgADWpZkyLUtX2+E8/abjyDHeRg6b+OVXO9lRgV1t1NK8n42WSvVOQIDAQABo4ICMzCCAi8w
+gcgGA1UdIwSBwDCBvYAUndYTUkXvvV54UshYjni8VB4/luahgaGkgZ4wgZsxCzAJBgNVBAYTAkpQ
+MS8wLQYDVQQKDCZNaW5pc3RyeSBvZiBIZWFsdGgsIExhYm91ciBhbmQgV2VsZmFyZTE8MDoGA1UE
+CwwzRGlyZWN0b3ItR2VuZXJhbCBmb3IgUG9saWN5IFBsYW5uaW5nIGFuZCBFdmFsdWF0aW9uMR0w
+GwYDVQQLDBRNSExXIEhQS0kgUm9vdCBDQSBWMoIBBDAdBgNVHQ4EFgQU4cw98uz7Vevn/sXEneUU
+sxLo6EcwDgYDVR0PAQH/BAQDAgZAMG8GA1UdEQRoMGakZDBiMQswCQYDVQQGEwJKUDEhMB8GA1UE
+CgwY5Yy755mC5oOF5aCx5aSn5a2m55eF6ZmiMRswGQYDVQQDDBLnpZ7mpb3lnYLjgIDlm5vljYEx
+EzARBgNVBAUTClRlc3QzMTcwNDQwOwYDVR0fBDQwMjAwoC6gLIYqaHR0cDovL2NlcnQubWVkaXMu
+b3IuanAvc2lnbi9jcmwtc2lnbjIuY3JsMDkGA1UdCQQyMDAwLgYGKIGFQgABMSQxIjAgoB4xHKAM
+BgoqgwiGkQ8BBgEBogwMClBoYXJtYWNpc3QwSgYDVR0gAQH/BEAwPjA8BgwqgwiGkQ8BBQEBAAEw
+LDAqBggrBgEFBQcCARYeaHR0cDovL3d3dy5tZWRpcy5vci5qcC84X2hwa2kvMA0GCSqGSIb3DQEB
+CwUAA4IBAQA4jj9z/P8z3d5+yKBCc/LRBS5SX6omWxYTBjkpvwJ3PyHiKEJcUnir6h214FmOZq8L
+Fvjr5I81CEbsmowIhbXHFOd5W4JkD3egx1WGDQaKfoW/GjJA8EIX5CkBYo+FClnOXqPJ+qMmF9IJ
+lPmbii0jEuaigkfMytEppfZXOVatPxbFkiDI3aj9jaapb2i26z2iCWPRycLIu4eKZzMRAJ/JXYlB
+wpGEHtsWWtT0Gf9lfCVbELpdFyxvQwlbSKdN1b0JAyUsJyYm0TYPCmeddqlbsaxqdEEdyyndqYtX
+u2Ct7Jpb73RNkUO1v7nNqAdl4Yj8h8Ppa7hUWTQPozC8CygJ
+</xs:X509Certificate></xs:X509Data></xs:KeyInfo><xs:Object xmlns:xa="http://uri.etsi.org/01903/v1.3.2#"><xa:QualifyingProperties Id="id3ac01f4c-QualifyingProperties" Target="#DispensingSign"><xa:SignedProperties Id="idafb3837b-SignedProperties"><xa:SignedSignatureProperties><xa:SigningTime>2022-09-08T09:34:34+00:00</xa:SigningTime><xa:SigningCertificateV2><xa:Cert><xa:CertDigest><xs:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><xs:DigestValue>XhDf/S8dfQgX4rbkJlcfNjWd9IUhN/y157oKgBPtUzY=
+</xs:DigestValue></xa:CertDigest></xa:Cert></xa:SigningCertificateV2></xa:SignedSignatureProperties></xa:SignedProperties></xa:QualifyingProperties></xs:Object></xs:Signature></DispensingSign>
+</Document>

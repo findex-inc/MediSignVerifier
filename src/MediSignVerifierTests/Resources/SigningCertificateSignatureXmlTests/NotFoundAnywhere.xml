@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Document"
+  xsi:noNamespaceSchemaLocation="EP.xsd">
+  <Prescription>
+    <PrescriptionManagement id="PrescriptionManagement">
+      <Version Value="EPS1.0" />
+    </PrescriptionManagement>
+    <PrescriptionDocument id="PrescriptionDocument">
+      <!-- test for SigningCertificateSignatureXmlTests. -->
+    </PrescriptionDocument>
+    <PrescriptionSign>
+      <xs:Signature xmlns:xs="http://www.w3.org/2000/09/xmldsig#" Id="PrescriptionSign">
+        <xs:SignedInfo Id="idTEST0007-SignedInfo">
+
+          <xs:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+          <xs:SignatureMethod
+            Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+
+          <xs:Reference
+            Id="idTEST0007-Reference1-Detached" URI="#PrescriptionDocument">
+            <!-- ダミー -->
+          </xs:Reference>
+
+          <xs:Reference
+            Id="idTEST0007-Reference2-KeyInfo" URI="#idTEST0007-KeyInfo">
+            <!-- テスト用なので中身不要 -->
+          </xs:Reference>
+
+          <xs:Reference
+            Id="idTEST0007-Reference3-SignedProperties"
+            Type="http://uri.etsi.org/01903#SignedProperties"
+            URI="#idTEST0007-SignedProperties">
+            <!-- ダミー -->
+          </xs:Reference>. </xs:SignedInfo>
+
+        <xs:SignatureValue Id="idTEST0007-SignatureValue">
+          <!-- テスト用なので中身不要 -->
+        </xs:SignatureValue>
+
+        <!--<xs:KeyInfo
+        Id="idTEST0007-KeyInfo-unmatch">
+          <xs:X509Data>
+            <xs:X509Certificate>
+            </xs:X509Certificate>
+          </xs:X509Data>
+        </xs:KeyInfo>-->
+
+        <xs:Object xmlns:xa="http://uri.etsi.org/01903/v1.3.2#">
+          <xa:QualifyingProperties Id="idTEST0007-QualifyingProperties"
+            Target="#PrescriptionSign">
+
+            <xa:SignedProperties Id="idTEST0007-SignedProperties">
+              <xa:SignedSignatureProperties>
+                <!-- ダミー -->
+              </xa:SignedSignatureProperties>
+            </xa:SignedProperties>
+
+          </xa:QualifyingProperties>
+        </xs:Object>
+
+      </xs:Signature>
+
+    </PrescriptionSign>
+  </Prescription>
+</Document>

@@ -1,0 +1,526 @@
+﻿{
+  "検証ファイル名": "C:\\FINDEX\\リモート署名\\タイムスタンプ付\\EP-VT6-005_06_調剤ATS付.xml",
+  "レポート作成時刻": "2023-03-17T16:49:06.1105455+09:00",
+  "検証時刻": "2023-03-17T16:49:05.4887808+09:00",
+  "検証結果": "INVALID",
+  "検証結果メッセージ": "署名検証に失敗しました。",
+  "電子処方箋種別": "Dispensing",
+  "署名リスト": [
+    {
+      "署名No": 1,
+      "署名種別": "DispPrescription",
+      "署名フォーマット": "XL",
+      "パス": "/Document/Dispensing/ReferencePrescription/PrescriptionSign/xs:Signature",
+      "署名構造": {
+        "検証結果": "VALID",
+        "検証結果詳細": [
+          {
+            "結果": "VALID",
+            "検証内容": "XAdES必須要素"
+          },
+          {
+            "結果": "VALID",
+            "検証内容": "SignedProperties要素"
+          }
+        ]
+      },
+      "署名者証明書": {
+        "検証結果": "VALID",
+        "Id": "id8e0823fe-KeyInfo",
+        "証明書検証基準時刻": "2022-09-07T17:44:53.33+09:00",
+        "証明書情報": [
+          {
+            "状態": "UNREVOKED",
+            "取得元": "/Document/Dispensing/ReferencePrescription/PrescriptionSign/xs:Signature/xs:KeyInfo",
+            "シリアル番号": "8090",
+            "発行者": "C=JP,O=Japan Medical Association,OU=Digital Certificate Center,CN=HPKI-01-HPKI_JV2-forNonRepudiation",
+            "サブジェクト": "C=JP,CN=JMACombi20766,SERIALNUMBER=TESTC20766",
+            "有効期間の開始": "2022-02-01T00:00:00+09:00",
+            "有効期間の終了": "2023-01-31T23:59:59+09:00",
+            "hcRole": "Medical Doctor",
+            "失効情報": [
+              {
+                "種類": "CRL",
+                "発行者": "C=JP,O=Japan Medical Association,OU=Digital Certificate Center,CN=HPKI-01-HPKI_JV2-forNonRepudiation",
+                "有効開始日": "2022-09-06T02:00:01+09:00",
+                "次の更新予定": "2022-09-10T02:00:01+09:00",
+                "失効リスト": []
+              }
+            ]
+          },
+          {
+            "状態": "UNREVOKED",
+            "取得元": "/Document/Dispensing/ReferencePrescription/PrescriptionSign/xs:Signature/xs:Object/xa:QualifyingProperties/xa:UnsignedProperties/xa:UnsignedSignatureProperties",
+            "シリアル番号": "02",
+            "発行者": "C=JP,O=Ministry of Health\\, Labour and Welfare,OU=Director-General for Policy Planning and Evaluation,OU=MHLW HPKI Root CA V2",
+            "サブジェクト": "C=JP,O=Japan Medical Association,OU=Digital Certificate Center,CN=HPKI-01-HPKI_JV2-forNonRepudiation",
+            "有効期間の開始": "2014-01-17T16:20:43+09:00",
+            "有効期間の終了": "2034-01-16T23:59:59+09:00",
+            "isCa": true,
+            "失効情報": [
+              {
+                "種類": "CRL",
+                "発行者": "C=JP,O=Ministry of Health\\, Labour and Welfare,OU=Director-General for Policy Planning and Evaluation,OU=MHLW HPKI Root CA V2",
+                "有効開始日": "2022-09-06T04:00:00+09:00",
+                "次の更新予定": "2022-09-10T04:00:00+09:00",
+                "失効リスト": []
+              }
+            ]
+          },
+          {
+            "状態": "UNREVOKED",
+            "取得元": "/Document/Dispensing/ReferencePrescription/PrescriptionSign/xs:Signature/xs:Object/xa:QualifyingProperties/xa:UnsignedProperties/xa:UnsignedSignatureProperties",
+            "シリアル番号": "01",
+            "発行者": "C=JP,O=Ministry of Health\\, Labour and Welfare,OU=Director-General for Policy Planning and Evaluation,OU=MHLW HPKI Root CA V2",
+            "サブジェクト": "C=JP,O=Ministry of Health\\, Labour and Welfare,OU=Director-General for Policy Planning and Evaluation,OU=MHLW HPKI Root CA V2",
+            "有効期間の開始": "2014-01-17T15:08:08+09:00",
+            "有効期間の終了": "2044-01-16T23:59:59+09:00",
+            "isCa": true
+          }
+        ],
+        "検証結果詳細": [
+          {
+            "結果": "VALID",
+            "検証内容": "証明書の指定確認"
+          },
+          {
+            "結果": "VALID",
+            "検証内容": "証明書の実体確認"
+          },
+          {
+            "結果": "VALID",
+            "検証内容": "証明書の一致確認"
+          },
+          {
+            "結果": "VALID",
+            "検証内容": "証明書のパス構築とパス検証"
+          }
+        ]
+      },
+      "参照データ": {
+        "検証結果": "VALID",
+        "リスト": [
+          {
+            "参照データNo": 1,
+            "検証結果": "VALID",
+            "Id": "idcdfc1634-Reference1-Detached",
+            "参照先": "#PrescriptionDocument",
+            "ダイジェストアルゴリズム": "SHA-256",
+            "ハッシュ値": "d2AViR1mbbTGkOUKs3/DNI66RLps3c8tE/UDoled78U=",
+            "検証結果詳細": [
+              {
+                "結果": "VALID",
+                "検証内容": "Reference要素"
+              },
+              {
+                "結果": "VALID",
+                "検証内容": "DigestMethod要素"
+              }
+            ]
+          },
+          {
+            "参照データNo": 2,
+            "検証結果": "VALID",
+            "Id": "id2fbbc3ef-Reference2-KeyInfo",
+            "参照先": "#id8e0823fe-KeyInfo",
+            "正規化アルゴリズム": "EXC-C14N",
+            "ダイジェストアルゴリズム": "SHA-256",
+            "ハッシュ値": "IbBzpiX4Bm0Nw/RI6DAqcFHO2XEEVcN2aJm69VlAo50=",
+            "検証結果詳細": [
+              {
+                "結果": "VALID",
+                "検証内容": "Reference要素"
+              },
+              {
+                "結果": "VALID",
+                "検証内容": "DigestMethod要素"
+              }
+            ]
+          },
+          {
+            "参照データNo": 3,
+            "検証結果": "VALID",
+            "Id": "idfb18f9ba-Reference3-SignedProperties",
+            "参照先": "#ida9c5429a-SignedProperties",
+            "正規化アルゴリズム": "EXC-C14N",
+            "ダイジェストアルゴリズム": "SHA-256",
+            "ハッシュ値": "xRI8GcgR3b9Of4mVWpQ5omA7EY4qW8oni+w4kvs7UQc=",
+            "検証結果詳細": [
+              {
+                "結果": "VALID",
+                "検証内容": "Reference要素"
+              },
+              {
+                "結果": "VALID",
+                "検証内容": "DigestMethod要素"
+              }
+            ]
+          }
+        ]
+      },
+      "署名データ": {
+        "検証結果": "VALID",
+        "Id": "idb2ac46a1-SignatureValue",
+        "正規化アルゴリズム": "EXC-C14N",
+        "署名アルゴリズム": "SHA-256withRSA",
+        "検証結果詳細": [
+          {
+            "結果": "VALID",
+            "検証内容": "SignatureValue要素"
+          },
+          {
+            "結果": "VALID",
+            "検証内容": "SignatureMethod要素"
+          }
+        ]
+      },
+      "署名タイムスタンプ": {
+        "検証結果": "INVALID",
+        "Id": "id13d54242",
+        "TSA証明書検証基準時刻": "2023-03-17T16:49:05.4887808+09:00",
+        "タイムスタンプ生成時刻": "2022-09-07T17:44:53.33+09:00",
+        "ダイジェストアルゴリズム": "SHA-256",
+        "ハッシュ値": "qN6U4jel2NzVqNT1erNv1CCfUR2J3R0Und9sjCJmdEo=",
+        "TSAの署名情報": {
+          "ダイジェストアルゴリズム": "SHA-512",
+          "署名アルゴリズム": "SHA-512withRSA",
+          "ハッシュ値": "x1DWEb4pUAcvfppI9jI7rm0myelW33imOhqLq/8OPoLQ3R2sLsHzlItQ1WjJ7B+BxqIo6+qqXQWRWBcQiiHP0A=="
+        },
+        "TSA証明書情報": {
+          "ダイジェストアルゴリズム": "SHA-1",
+          "ハッシュ値": "16V6H7uAfW1oYDthT0pEbG306YM=",
+          "証明書情報": [
+            {
+              "状態": "UNREVOKED",
+              "取得元": "/Document/Dispensing/ReferencePrescription/PrescriptionSign/xs:Signature/xs:Object/xa:QualifyingProperties/xa:UnsignedProperties/xa:UnsignedSignatureProperties/xa:SignatureTimeStamp",
+              "シリアル番号": "25",
+              "発行者": "C=JP,O=Sample Organization,OU=Sample CA,CN=Test CA for TimeStampServer",
+              "サブジェクト": "C=JP,O=MDIS,OU=Financial Department,CN=TimeStampServer01",
+              "有効期間の開始": "2017-06-21T19:28:12+09:00",
+              "有効期間の終了": "2034-01-01T00:00:00+09:00",
+              "拡張キー使用法": [
+                "IdKPTimeStamping"
+              ],
+              "失効情報": [
+                {
+                  "種類": "CRL",
+                  "発行者": "C=JP,O=Sample Organization,OU=Sample CA,CN=Test CA for TimeStampServer",
+                  "有効開始日": "2017-06-21T19:28:27+09:00",
+                  "次の更新予定": "2027-06-19T19:28:27+09:00",
+                  "失効リスト": []
+                }
+              ]
+            },
+            {
+              "状態": "UNREVOKED",
+              "取得元": "/Document/Dispensing/ReferencePrescription/PrescriptionSign/xs:Signature/xs:Object/xa:QualifyingProperties/xa:UnsignedProperties/xa:UnsignedSignatureProperties/xa141:TimeStampValidationData",
+              "シリアル番号": "82bd6c1594577399",
+              "発行者": "C=JP,O=Sample Organization,OU=Sample CA,CN=Test CA for TimeStampServer",
+              "サブジェクト": "C=JP,O=Sample Organization,OU=Sample CA,CN=Test CA for TimeStampServer",
+              "有効期間の開始": "2017-06-21T19:28:06+09:00",
+              "有効期間の終了": "2027-06-29T19:28:06+09:00"
+            }
+          ]
+        },
+        "検証結果詳細": [
+          {
+            "結果": "INVALID",
+            "検証内容": "TSA証明書",
+            "メッセージ": "証明書の制約を満足していません。"
+          },
+          {
+            "結果": "VALID",
+            "検証内容": "MessageImprint値"
+          }
+        ]
+      }
+    },
+    {
+      "署名No": 2,
+      "署名種別": "Dispensing",
+      "署名フォーマット": "A",
+      "パス": "/Document/DispensingSign/xs:Signature",
+      "署名構造": {
+        "検証結果": "VALID",
+        "検証結果詳細": [
+          {
+            "結果": "VALID",
+            "検証内容": "XAdES必須要素"
+          },
+          {
+            "結果": "VALID",
+            "検証内容": "SignedProperties要素"
+          }
+        ]
+      },
+      "署名者証明書": {
+        "検証結果": "VALID",
+        "Id": "id8db23ffe-KeyInfo",
+        "証明書検証基準時刻": "2022-09-30T18:46:23.064+09:00",
+        "証明書情報": [
+          {
+            "状態": "UNREVOKED",
+            "取得元": "/Document/DispensingSign/xs:Signature/xs:KeyInfo",
+
+            "シリアル番号": "83e3",
+            "発行者": "C=JP,O=Japan Medical Association,OU=Digital Certificate Center,CN=HPKI-01-HPKI_JV2-forNonRepudiation",
+            "サブジェクト": "C=JP,CN=20024 JPATEST,SERIALNUMBER=T20024-jpa",
+            "有効期間の開始": "2022-03-01T00:00:00+09:00",
+            "有効期間の終了": "2023-02-28T23:59:59+09:00",
+            "hcRole": "Pharmacist",
+            "失効情報": [
+              {
+                "種類": "CRL",
+                "発行者": "C=JP,O=Japan Medical Association,OU=Digital Certificate Center,CN=HPKI-01-HPKI_JV2-forNonRepudiation",
+                "有効開始日": "2022-09-30T02:00:01+09:00",
+                "次の更新予定": "2022-10-04T02:00:01+09:00",
+                "失効リスト": []
+              }
+            ]
+          },
+          {
+            "状態": "UNREVOKED",
+            "取得元": "/Document/DispensingSign/xs:Signature/xs:Object/xa:QualifyingProperties/xa:UnsignedProperties/xa:UnsignedSignatureProperties",
+            "シリアル番号": "02",
+            "発行者": "C=JP,O=Ministry of Health\\, Labour and Welfare,OU=Director-General for Policy Planning and Evaluation,OU=MHLW HPKI Root CA V2",
+            "サブジェクト": "C=JP,O=Japan Medical Association,OU=Digital Certificate Center,CN=HPKI-01-HPKI_JV2-forNonRepudiation",
+            "有効期間の開始": "2014-01-17T16:20:43+09:00",
+            "有効期間の終了": "2034-01-16T23:59:59+09:00",
+            "isCa": true,
+            "失効情報": [
+              {
+                "種類": "CRL",
+                "発行者": "C=JP,O=Ministry of Health\\, Labour and Welfare,OU=Director-General for Policy Planning and Evaluation,OU=MHLW HPKI Root CA V2",
+                "有効開始日": "2022-09-30T04:00:01+09:00",
+                "次の更新予定": "2022-10-04T04:00:01+09:00",
+                "失効リスト": []
+              }
+            ]
+          },
+          {
+            "状態": "UNREVOKED",
+            "取得元": "/Document/DispensingSign/xs:Signature/xs:Object/xa:QualifyingProperties/xa:UnsignedProperties/xa:UnsignedSignatureProperties",
+            "シリアル番号": 1,
+            "発行者": "C=JP,O=Ministry of Health\\, Labour and Welfare,OU=Director-General for Policy Planning and Evaluation,OU=MHLW HPKI Root CA V2",
+            "サブジェクト": "C=JP,O=Ministry of Health\\, Labour and Welfare,OU=Director-General for Policy Planning and Evaluation,OU=MHLW HPKI Root CA V2",
+            "有効期間の開始": "2014-01-17T15:08:08+09:00",
+            "有効期間の終了": "2044-01-16T23:59:59+09:00",
+            "isCa": true
+          }
+        ],
+        "検証結果詳細": [
+          {
+            "結果": "VALID",
+            "検証内容": "証明書の指定確認"
+          },
+          {
+            "結果": "VALID",
+            "検証内容": "証明書の実体確認"
+          },
+          {
+            "結果": "VALID",
+            "検証内容": "証明書の一致確認"
+          },
+          {
+            "結果": "VALID",
+            "検証内容": "証明書のパス構築とパス検証"
+          }
+        ]
+      },
+      "参照データ": {
+        "検証結果": "VALID",
+        "リスト": [
+          {
+            "参照データNo": 1,
+            "検証結果": "VALID",
+            "Id": "id11975bfc-Reference1-Detached",
+            "参照先": "#Dispensing",
+            "ダイジェストアルゴリズム": "SHA-256",
+            "ハッシュ値": "vDsFi0NN3F5TcLVR/Q5bBOAon+KRXW0d0Jhg0SAh7jM=",
+            "検証結果詳細": [
+              {
+                "結果": "VALID",
+                "検証内容": "Reference要素"
+              },
+              {
+                "結果": "VALID",
+                "検証内容": "DigestMethod要素"
+              }
+            ]
+          },
+          {
+            "参照データNo": 2,
+            "検証結果": "VALID",
+            "Id": "idfac9b8cf-Reference2-KeyInfo",
+            "参照先": "#id8db23ffe-KeyInfo",
+            "正規化アルゴリズム": "EXC-C14N",
+            "ダイジェストアルゴリズム": "SHA-256",
+            "ハッシュ値": "/UaxSM9hB72205q/G+g3MBTGL+oPR0UrYvoV+xTTNBk=",
+            "検証結果詳細": [
+              {
+                "結果": "VALID",
+                "検証内容": "Reference要素"
+              },
+              {
+                "結果": "VALID",
+                "検証内容": "DigestMethod要素"
+              }
+            ]
+          },
+          {
+            "参照データNo": 3,
+            "検証結果": "VALID",
+            "Id": "idf5540fbf-Reference3-SignedProperties",
+            "参照先": "#ide20ca965-SignedProperties",
+            "正規化アルゴリズム": "EXC-C14N",
+            "ダイジェストアルゴリズム": "SHA-256",
+            "ハッシュ値": "EP2PXJ1hy93ZbBXS5WZDCeGdc3xsF9jsSDwKumpsRRk=",
+            "検証結果詳細": [
+              {
+                "結果": "VALID",
+                "検証内容": "Reference要素"
+              },
+              {
+                "結果": "VALID",
+                "検証内容": "DigestMethod要素"
+              }
+            ]
+          }
+        ]
+      },
+      "署名データ": {
+        "検証結果": "VALID",
+        "Id": "idf2b97dfa-SignatureValue",
+        "正規化アルゴリズム": "EXC-C14N",
+        "署名アルゴリズム": "SHA-256withRSA",
+        "検証結果詳細": [
+          {
+            "結果": "VALID",
+            "検証内容": "SignatureValue要素"
+          },
+          {
+            "結果": "VALID",
+            "検証内容": "SignatureMethod要素"
+          }
+        ]
+      },
+      "署名タイムスタンプ": {
+        "検証結果": "INVALID",
+        "Id": "id1e3c86e3",
+        "TSA証明書検証基準時刻": "2022-09-30T18:46:23.196+09:00",
+        "タイムスタンプ生成時刻": "2022-09-30T18:46:23.064+09:00",
+        "ダイジェストアルゴリズム": "SHA-256",
+        "ハッシュ値": "nvvV4HlnShe7ePWLD9Eb1XWIPuO9KWUf2myzFyofqUE=",
+        "TSAの署名情報": {
+          "ダイジェストアルゴリズム": "SHA-512",
+          "署名アルゴリズム": "SHA-512withRSA",
+          "ハッシュ値": "uikLeYlm8U8ah9QEwrYvKknxsuX2STs6qWGj1iWN9KgZeTLrp3C8+684nlovG0BiSWrtbOOfV41x/yec8VgZSQ=="
+        },
+        "TSA証明書情報": {
+          "ダイジェストアルゴリズム": "SHA-1",
+          "ハッシュ値": "16V6H7uAfW1oYDthT0pEbG306YM=",
+          "証明書情報": [
+            {
+              "状態": "UNREVOKED",
+              "取得元": "/Document/DispensingSign/xs:Signature/xs:Object/xa:QualifyingProperties/xa:UnsignedProperties/xa:UnsignedSignatureProperties/xa:SignatureTimeStamp",
+              "シリアル番号": "25",
+              "発行者": "C=JP,O=Sample Organization,OU=Sample CA,CN=Test CA for TimeStampServer",
+              "サブジェクト": "C=JP,O=MDIS,OU=Financial Department,CN=TimeStampServer01",
+              "有効期間の開始": "2017-06-21T19:28:12+09:00",
+              "有効期間の終了": "2034-01-01T00:00:00+09:00",
+              "拡張キー使用法": [
+                "IdKPTimeStamping"
+              ],
+              "失効情報": [
+                {
+                  "種類": "CRL",
+                  "発行者": "C=JP,O=Sample Organization,OU=Sample CA,CN=Test CA for TimeStampServer",
+                  "有効開始日": "2017-06-21T19:28:27+09:00",
+                  "次の更新予定": "2027-06-19T19:28:27+09:00",
+                  "失効リスト": []
+                }
+              ]
+            },
+            {
+              "状態": "UNREVOKED",
+              "取得元": "/Document/DispensingSign/xs:Signature/xs:Object/xa:QualifyingProperties/xa:UnsignedProperties/xa:UnsignedSignatureProperties/xa141:TimeStampValidationData",
+              "シリアル番号": "82bd6c1594577399",
+              "発行者": "C=JP,O=Sample Organization,OU=Sample CA,CN=Test CA for TimeStampServer",
+              "サブジェクト": "C=JP,O=Sample Organization,OU=Sample CA,CN=Test CA for TimeStampServer",
+              "有効期間の開始": "2017-06-21T19:28:06+09:00",
+              "有効期間の終了": "2027-06-29T19:28:06+09:00"
+            }
+          ]
+        },
+        "検証結果詳細": [
+          {
+            "結果": "INVALID",
+            "検証内容": "TSA証明書",
+            "メッセージ": "証明書の制約を満足していません。"
+          },
+          {
+            "結果": "VALID",
+            "検証内容": "MessageImprint値"
+          }
+        ]
+      },
+      "アーカイブタイムスタンプ": {
+        "検証結果": "INVALID",
+        "リスト": [
+          {
+            "アーカイブタイムスタンプNo": 1,
+            "検証結果": "INVALID",
+            "Id": "id6ccbc5ec",
+            "TSA証明書検証基準時刻": "2023-03-17T16:49:05.4887808+09:00",
+            "タイムスタンプ生成時刻": "2022-09-30T18:46:23.196+09:00",
+            "ダイジェストアルゴリズム": "SHA-256",
+            "ハッシュ値": "tNqsO2NYjMll18MNdDbjGT2tp4xzvJZ/1uYl3B2rDJw=",
+            "TSAの署名情報": {
+              "ダイジェストアルゴリズム": "SHA-512",
+              "署名アルゴリズム": "SHA-512withRSA",
+              "ハッシュ値": "ugJpDrxX1MbqmvEkaP4SSvzAiFOCSLH5gfrB0h6wAheV7PdU1JQuwXiMKoXGkXYp5ZTPccADHC/SZVikAgiOhg=="
+            },
+            "TSA証明書情報": {
+              "ダイジェストアルゴリズム": "SHA-1",
+              "ハッシュ値": "16V6H7uAfW1oYDthT0pEbG306YM=",
+              "証明書情報": [
+                {
+                  "状態": "UNDETERMINED",
+                  "取得元": "/Document/DispensingSign/xs:Signature/xs:Object/xa:QualifyingProperties/xa:UnsignedProperties/xa:UnsignedSignatureProperties/xa:SignatureTimeStamp",
+                  "シリアル番号": "25",
+                  "発行者": "C=JP,O=Sample Organization,OU=Sample CA,CN=Test CA for TimeStampServer",
+                  "サブジェクト": "C=JP,O=MDIS,OU=Financial Department,CN=TimeStampServer01",
+                  "有効期間の開始": "2017-06-21T19:28:12+09:00",
+                  "有効期間の終了": "2034-01-01T00:00:00+09:00",
+                  "拡張キー使用法": [
+                    "IdKPTimeStamping"
+                  ]
+                },
+                {
+                  "状態": "UNREVOKED",
+                  "取得元": "/Document/DispensingSign/xs:Signature/xs:Object/xa:QualifyingProperties/xa:UnsignedProperties/xa:UnsignedSignatureProperties/xa141:TimeStampValidationData",
+                  "シリアル番号": "82bd6c1594577399",
+                  "発行者": "C=JP,O=Sample Organization,OU=Sample CA,CN=Test CA for TimeStampServer",
+                  "サブジェクト": "C=JP,O=Sample Organization,OU=Sample CA,CN=Test CA for TimeStampServer",
+                  "有効期間の開始": "2017-06-21T19:28:06+09:00",
+                  "有効期間の終了": "2027-06-29T19:28:06+09:00"
+                }
+              ]
+            },
+            "検証結果詳細": [
+              {
+                "結果": "INVALID",
+                "検証内容": "TSA証明書",
+                "メッセージ": "証明書の制約を満足していません。"
+              },
+              {
+                "結果": "VALID",
+                "検証内容": "MessageImprint値"
+              }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

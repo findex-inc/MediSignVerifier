@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Document" xsi:noNamespaceSchemaLocation="EP.xsd"><Prescription><PrescriptionManagement id="PrescriptionManagement"><Version Value="EPS1.0"/><PrescriptionId Value="1439e0c5-7c1d-4512-861d-263de48417bf" /></PrescriptionManagement><PrescriptionDocument id="PrescriptionDocument">U0oxCjEsMSw4MDAwMDEwLDk5LOaknOiovOeUqOeXhemZogoyLDg1Mi04MTU0LOmVt+W0juecjOmVt+W0juW4ggozLDAzLTM3NzUtMzExMSwwMy0zNzc1LTMxMTIs44Gd44Gu5LuW6YCj57Wh5YWI77yQ77yRCjQsMiwwMSzlhoXnp5EKNSwwMDAwMDAwMDAwMDAwMDEs772y7728772s7727776M776e776b772zLOWMu+iAheOAgOS4iemDjgoxMSwwMDAwMDAwMDAwMDAwMDEs6Zu75Yem44CA5pyJ5Yq55LqU5LqMLO++g+++nu++ne+9vO+9riDvvpXvvbPvvbrvvbPvvbrvvp7vvoYKMTIsMgoxMywyMDExMDEwMQoxNCwxCjIxLDEKMjIsMzExMzA4NDIKMjMsMjAyMiwwMTAwMDEsMSwwMQoyNCwxMDAsMTAwCjI1LDEKMjcsMjkxMjM0NTYsMTIzNDU2NwoyOCwyOTEyMzQ1NiwxMjM0NTY3CjI5LDI5MTIzNDU2LDEyMzQ1NjcKMzAsOTkxMjM0NTYtMDEyMzQ1Njc4OTA5OTEyMzQ1Ni0wMTIzNDU2Nzg5MCw5OTEyMzQ1Ni0wMTIzNDU2Nzg5MDk5MTIzNDU2LTAxMjM0NTY3ODkwCjMxLDExMTEKNTEsMjAyMjA5MDcKNTIsMjAyMjEyMzEKNjIsMQo4MSwxLDEs5YKZ6ICD77yQ77yRCjgyLDEsMTAwMDAwMDAwMDAwMDAwMQoxMDEsMSwxLCwxNAoxMTEsMSwzLDEwMTExMDAwMDAwMDAwMDAs77yR5pel77yR5Zue5bCx5a+d5YmN44CA5pyN55SoLDEKMTgxLDEsMSws55So5rOV6KOc6Laz5oOF5aCx77yQ77yRLCwKMjAxLDEsMSwxLDIsNjIyNjg4MTAxLOODn+ODi+ODquODs+ODoeODq+ODiO+8r++8pOmMoO+8ku+8lc68772HLDIsMSzpjKAKMjExLDEsMSwxMDEKMjIxLDEsMSwxLjI1LDEsLCwsLCwsLAoyMzEsMSwxLDAsMCwwLDAKMjQxLDEsMSwxLDEKMjgxLDEsMSwxLCzolqzlk4Hoo5zotrPmg4XloLHvvJDvvJEsCjEwMSwyLDMsLDEKMTExLDIsMywxMDUwVzIwMDAwMDAwMDAwLOmBqeWunOOAgOacjeeUqCwxCjE4MSwyLDEsLOeUqOazleijnOi2s+aDheWgse+8kO+8kSwsCjIwMSwyLDEsMSwyLDY2MjY0MDY4MyzjgqLjg6vjg6Hjgr/ou5/oho/jgIDvvJDvvI7vvJHvvIUsMSwxLOacrAoyMTEsMiwxLDEwMQoyMjEsMiwxLDEuMjUsMSwsLCwsLCwsCjIzMSwyLDEsMCwwLDAsMAoyNDEsMiwxLDEsMQoyODEsMiwxLDEsLOiWrOWTgeijnOi2s+aDheWgse+8kO+8kSw=</PrescriptionDocument><AdditionalPrescriptionInformation id="AdditionalPrescriptionInformation"><ConversionPharmaceuticalCode><ConversionREcode>201,1,1,1,2,622688101,É~ÉjÉäÉìÉÅÉãÉgÇnÇcè˘ÇQÇTÉ Çá,2,1,è˘</ConversionREcode><ConversionYJcode>201,1,1,1,4,2419001F4022,É~ÉjÉäÉìÉÅÉãÉgÇnÇcè˘ÇQÇTÉ Çá,2,1,è˘</ConversionYJcode></ConversionPharmaceuticalCode><ConversionPharmaceuticalCode><ConversionREcode>201,2,1,1,2,662640683,ÉAÉãÉÅÉ^ìÓçpÅ@ÇOÅDÇPÅì,1,1,ñ{</ConversionREcode><ConversionYJcode>201,2,1,1,4,2646727M1022,ÉAÉãÉÅÉ^ìÓçp,1,1,ñ{</ConversionYJcode></ConversionPharmaceuticalCode></AdditionalPrescriptionInformation><PrescriptionSign><xs:Signature xmlns:xs="http://www.w3.org/2000/09/xmldsig#" Id="PrescriptionSign"><xs:SignedInfo Id="id898cfb77-SignedInfo"><xs:CanonicalizationMethod Algorithm=""/><xs:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256"/><xs:Reference Id="id29b12603-Reference1-Detached" URI="#PrescriptionDocument"><xs:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><xs:DigestValue>d2AViR1mbbTGkOUKs3/DNI66RLps3c8tE/UDoled78U=
+</xs:DigestValue></xs:Reference><xs:Reference Id="id041cb21b-Reference2-KeyInfo" URI="#id6a875f31-KeyInfo"><xs:Transforms><xs:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></xs:Transforms><xs:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><xs:DigestValue>bI4jGyBqLZB28i/cH8njp05705/ji/sUPptLX/M2ycQ=
+</xs:DigestValue></xs:Reference><xs:Reference Id="id8b2ae0fe-Reference3-SignedProperties" Type="http://uri.etsi.org/01903#SignedProperties" URI="#idc51bfd03-SignedProperties"><xs:Transforms><xs:Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#"/></xs:Transforms><xs:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><xs:DigestValue>8XgGgHpPS/3nAQTc6cVSGHI5ObMWjQ8l3oHpyQkF4jQ=
+</xs:DigestValue></xs:Reference></xs:SignedInfo><xs:SignatureValue Id="id00fac23c-SignatureValue">CE2jLDBwEc1NJRaoOZ/PvThIR7EuNrg5U5OkhXiq7T+A6Erb2wv+lcbnZWfmtdem1BaKzcI9kk2j
+YpG5nG9sIJMq5+AGjDszZ10mkshzg9L44FcgnB4TgVD32U6o361lqYXUgIPHpD8uINGNvMVjRdCP
+q6207euvjLP35Wyf2Hcv9dmmWSiJJQ1y6Udz6EKxss7bSKxZUwjArgfoWW31LoNUFZwt4qwyIuB5
+RfKsDa/bi3sj1d5BGRDVbmmC8EYzcwjvXlcRzBh5a4qRT549alcAiSu7cdhThQc4PN4yHiskn58d
+O+Lax7yN4Pkn9vJeaGhtT6WF2pgFgX5GF2ojHA==
+</xs:SignatureValue><xs:KeyInfo Id="id6a875f31-KeyInfo"><xs:X509Data><xs:X509Certificate>MIIFgjCCBGqgAwIBAgICAV4wDQYJKoZIhvcNAQELBQAwZjELMAkGA1UEBhMCSlAxDjAMBgNVBAoM
+BU1FRElTMRYwFAYDVQQLDA1NRURJUyBIUEtJIENBMS8wLQYDVQQDDCZIUEtJLTAxLU1lZGlzU2ln
+bkNBMi1mb3JOb25SZXB1ZGlhdGlvbjAeFw0yMjAyMDYxNTAwMDBaFw0yNzAyMDcxNDU5NTlaMGQx
+CzAJBgNVBAYTAkpQMSIwIAYDVQQKDBlNRURJUyBVTklWRVJTSVRZIEhPU1BJVEFMMRwwGgYDVQQD
+DBNTYW5qdXNoaSBLYWd1cmF6YWthMRMwEQYDVQQFEwpUZXN0MTE3MTIwMIIBIjANBgkqhkiG9w0B
+AQEFAAOCAQ8AMIIBCgKCAQEAy6PVZxPcrXC3jW+teT7YLvl2+0lfHRbZWjf56eMn8mRUKKNsuPAu
+tvSaTbRBL+E4S5HIzYR7dUtqqXnRg+xH1YPe2eaFAfzJFBNZggHTjYfV2wmX0kE/0sssjy5A1BUZ
+4zRN1+oGantT8CkLJD4EsTZX1LCNJwUsBpkzN6kyhc4HddG9M3ISGa0dMtP31L1XcjCs/cP3xCJb
+8Z5osEacccwVBaiL7CdpATEcro+xEJtYii0IibH9KJcrxOEbUkP8KWTzC2npwA+YauAmC6s8GfMr
+wAEb0U8x+v58gUe4hVJS6PmW3QhnwVHFKy5Yp6zbDxB2jEomOp8iIvsSUXBBMwIDAQABo4ICOjCC
+AjYwgcgGA1UdIwSBwDCBvYAUndYTUkXvvV54UshYjni8VB4/luahgaGkgZ4wgZsxCzAJBgNVBAYT
+AkpQMS8wLQYDVQQKDCZNaW5pc3RyeSBvZiBIZWFsdGgsIExhYm91ciBhbmQgV2VsZmFyZTE8MDoG
+A1UECwwzRGlyZWN0b3ItR2VuZXJhbCBmb3IgUG9saWN5IFBsYW5uaW5nIGFuZCBFdmFsdWF0aW9u
+MR0wGwYDVQQLDBRNSExXIEhQS0kgUm9vdCBDQSBWMoIBBDAdBgNVHQ4EFgQUwUIYMzPxAiX6Mwch
+BNWKrcAL4UUwDgYDVR0PAQH/BAQDAgZAMHIGA1UdEQRrMGmkZzBlMQswCQYDVQQGEwJKUDEhMB8G
+A1UECgwY5Yy755mC5oOF5aCx5aSn5a2m55eF6ZmiMR4wHAYDVQQDDBXnpZ7mpb3lnYLjgIDkuInl
+jYHlm5sxEzARBgNVBAUTClRlc3QxMTcxMjAwOwYDVR0fBDQwMjAwoC6gLIYqaHR0cDovL2NlcnQu
+bWVkaXMub3IuanAvc2lnbi9jcmwtc2lnbjIuY3JsMD0GA1UdCQQ2MDQwMgYGKIGFQgABMSgxJjAk
+oCIxIKAMBgoqgwiGkQ8BBgEBohAMDk1lZGljYWwgRG9jdG9yMEoGA1UdIAEB/wRAMD4wPAYMKoMI
+hpEPAQUBAQABMCwwKgYIKwYBBQUHAgEWHmh0dHA6Ly93d3cubWVkaXMub3IuanAvOF9ocGtpLzAN
+BgkqhkiG9w0BAQsFAAOCAQEAmUx6UQDm6HboCK39k2/6qL9uAB9kSQtlyLxQ8Jpwdb7Q8iqNfyyo
+ZXfMArjQpEcCQc63fsNoDItQfFjI8YJPMZExAVsPI1n/3NnelX00rxshPvZQvsryYntNUMykBbro
+hlKx1hQJFCIETzXeBKrNJIHTvy+WF/3nAsIp6hU3mu2y9qzPhX0UViIlJQbGEhIj5JXmNYaVpYwR
+DqOArUheAmbDevNNXKRsEfNICmtxotY1WlPdbneh3axHutxrzs5E4i+0XCr8m+C2Fz+bQoChiMTP
+5R4USWe3R3Nt+dNZjbj1OvEnLEUT5tOfpZ0KzXDJZht5DOHLUhtV6+WuI+6Yqw==
+</xs:X509Certificate></xs:X509Data></xs:KeyInfo><xs:Object xmlns:xa="http://uri.etsi.org/01903/v1.3.2#"><xa:QualifyingProperties Id="id993b4fd6-QualifyingProperties" Target="#PrescriptionSign"><xa:SignedProperties Id="idc51bfd03-SignedProperties"><xa:SignedSignatureProperties><xa:SigningTime>2022-09-07T08:08:01+00:00</xa:SigningTime><xa:SigningCertificateV2><xa:Cert><xa:CertDigest><xs:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/><xs:DigestValue>NqeepkXkMTTnbn2s3W197fpOof0tj+Rd8JLII6BofmQ=
+</xs:DigestValue></xa:CertDigest></xa:Cert></xa:SigningCertificateV2></xa:SignedSignatureProperties></xa:SignedProperties></xa:QualifyingProperties></xs:Object></xs:Signature></PrescriptionSign></Prescription></Document>

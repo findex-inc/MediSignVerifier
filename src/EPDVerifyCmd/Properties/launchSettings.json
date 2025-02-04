@@ -1,0 +1,8 @@
+﻿{
+  "profiles": {
+    "EPDVerifyCmd": {
+      "commandName": "Project",
+      "commandLineArgs": ""
+    }
+  }
+}

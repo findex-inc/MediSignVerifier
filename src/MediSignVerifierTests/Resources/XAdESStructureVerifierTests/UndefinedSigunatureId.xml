@@ -1,0 +1,92 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Document xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="Document"
+  xsi:noNamespaceSchemaLocation="EP.xsd">
+  <Prescription>
+    <PrescriptionManagement id="PrescriptionManagement">
+      <Version Value="EPS1.0" />
+    </PrescriptionManagement>
+    <PrescriptionDocument id="PrescriptionDocument">
+      <!-- test for SigningCertificateSignatureXmlTests. -->
+    </PrescriptionDocument>
+    <PrescriptionSign>
+      <xs:Signature xmlns:xs="http://www.w3.org/2000/09/xmldsig#" NotId="PrescriptionSign">
+        <xs:SignedInfo Id="idTEST0006-SignedInfo">
+
+          <xs:CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" />
+          <xs:SignatureMethod
+            Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+
+          <xs:Reference
+            Id="idTEST0006-Reference1-Detached" URI="#PrescriptionDocument">
+            <xs:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256"/>
+            <xs:DigestValue> <!-- ダミー --></xs:DigestValue>
+          </xs:Reference>
+
+          <xs:Reference
+            Id="idTEST0006-Reference2-KeyInfo" URI="#idTEST0006-KeyInfo">
+            <!-- ダミー -->
+          </xs:Reference>
+
+          <xs:Reference
+            Id="idTEST0006-Reference3-SignedProperties"
+            Type="http://uri.etsi.org/01903#SignedProperties"
+            URI="#idTEST0006-SignedProperties">
+            <!-- ダミー -->
+          </xs:Reference>. </xs:SignedInfo>
+
+        <xs:SignatureValue Id="idTEST0006-SignatureValue">
+          <!-- ダミー -->
+        </xs:SignatureValue>
+
+        <xs:KeyInfo Id="idTEST0006-KeyInfo">
+          <!-- ダミー -->
+        </xs:KeyInfo>
+
+        <xs:Object xmlns:xa="http://uri.etsi.org/01903/v1.3.2#">
+          <xa:QualifyingProperties Id="idTEST0006-QualifyingProperties"
+            Target="#PrescriptionSign">
+
+            <xa:SignedProperties Id="idTEST0006-SignedProperties">
+              <xa:SignedSignatureProperties>
+                <xa:SigningTime>2022-09-07T08:08:01+00:00</xa:SigningTime>
+                <xa:SigningCertificate>
+                  <xa:Cert>
+                    <xa:CertDigest>
+                      <xs:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+                      <xs:DigestValue>NqeepkXkMTTnbn2s3W197fpOof0tj+Rd8JLII6BofmQ= </xs:DigestValue>
+                    </xa:CertDigest>
+                    <xa:IssuerSerial>
+                      <xs:X509IssuerName>C=JP,O=MEDIS,OU=MEDIS HPKI CA,CN=HPKI-01-MedisSignCA2-forNonRepudiation</xs:X509IssuerName>
+                      <xs:X509SerialNumber>350</xs:X509SerialNumber>
+                    </xa:IssuerSerial>
+                  </xa:Cert>
+                </xa:SigningCertificate>
+              </xa:SignedSignatureProperties>
+            </xa:SignedProperties>
+
+            <xa:UnsignedProperties>
+              <xa:UnsignedSignatureProperties>
+                <xa:SignatureTimeStamp Id="idbc9e4f38">
+                  <!-- ダミー -->
+                </xa:SignatureTimeStamp>
+                <xa:CertificateValues>
+                  <xa:EncapsulatedX509Certificate>
+                    <!-- ダミー -->
+                  </xa:EncapsulatedX509Certificate>
+                </xa:CertificateValues>
+                <xa:RevocationValues>
+                    <!-- ダミー -->
+                </xa:RevocationValues>
+                <xa141:ArchiveTimeStamp xmlns:xa141="http://uri.etsi.org/01903/v1.4.1#">
+                  <!-- ダミー -->
+                </xa141:ArchiveTimeStamp>
+              </xa:UnsignedSignatureProperties>
+            </xa:UnsignedProperties>
+
+          </xa:QualifyingProperties>
+        </xs:Object>
+      </xs:Signature>
+
+    </PrescriptionSign>
+  </Prescription>
+</Document>
