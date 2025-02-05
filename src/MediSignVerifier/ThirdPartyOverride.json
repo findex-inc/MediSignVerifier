@@ -1,0 +1,11 @@
+﻿[
+  {
+    "Id": "BouncyCastle.NetCore",
+    "Version": "1.9.0",
+    "Authors": "BouncyCastle",
+    "ProjectUrl": "https://github.com/chrishaly/bc-csharp",
+    "Copyright": "Copyright (c) 2000 - 2024 The Legion of the Bouncy Castle Inc. (https://www.bouncycastle.org)",
+    "License": "Bouncy Castle License",
+    "LicenseUrl": "https://www.bouncycastle.org/licence.html"
+  }
+]
