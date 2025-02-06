@@ -20,9 +20,8 @@
 1. MediSignVerifier
 ライブラリ本体、署名の検証を実施します。
 1. EPDVerifyCmd
-コマンドによる署名を実施し、結果をXMLファイルとしてレポートします。
-内部的にはMediSignVerifierをCallしています。
-1.MediSignVerifier.Tests
+コマンドによる署名を実施し、結果をXMLファイルとしてレポートします。内部的にはMediSignVerifierを利用しています。
+1. MediSignVerifier.Tests
 テスト用プロジェクトになります。
 
 
@@ -42,13 +41,13 @@ public void Verify(Options options)
     _logger.Trace("Start.");
 
     var doc = SignedDocumentXml.Load(options.TargetPath);
-
     var vconfig = new VerificationConfig()
     {
         HPKIValidationEnabled = options.HPKIValidationEnabled!.Value,
     };
-    var result = VerifyDocument(options, vconfig, doc);
 
+    var result = VerifyDocument(options, vconfig, doc);
+    
     var exitcode = (int)result.Status;
     Environment.ExitCode = exitcode;
     _logger.Info($"検証結果: {result.Status}");
@@ -73,8 +72,21 @@ private static SignatureVerificationResult VerifyDocument(Options options, Verif
 }
 
 ```
+**nugetパッケージの取得方法:**
+
+
+**コマンド説明:**
+
+
+**制限事項:**
+* 電子処方箋に使われているXAdES形式にのみ対応してます。
+* ネットワークを介した検証は行っていません。
+
 
 **免責事項:**
-
 本ソフトウェアは、現状のまま提供され、明示または黙示を問わず、いかなる種類の保証もありません。
 本ソフトウェアの使用に起因または関連して発生したいかなる損害（直接的、間接的、偶発的、特別、結果的、懲罰的なものを含むがこれらに限定されない）についても、作者は一切の責任を負いません。
+
+
+
+
