@@ -6,7 +6,7 @@
 
     <!--以下、nuget管理用-->
     <Id>SignatureVerifier</Id>
-    <Version>0.9.5</Version>
+    <Version>0.9.6</Version>
     <ReleaseNotes>JSONレポート出力時に日本語がUNICODEエスケープ文字になる問題に対応。</ReleaseNotes>
     <Company>FINDEX Inc.</Company>
     <Authors>FINDEX Inc.</Authors>
@@ -84,6 +84,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ThirdPartyNotices.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
 
 

@@ -1,41 +1,47 @@
 
-## MediSignVerifier
+# MediSignVerifierとは
+**MediSignVerifier** は、Microsoft Visual Studio C#で作成された、.NET 向けのオープンソースライブラリです。
+日本の電子処方箋に付与された電子署名の検証を目的としています。
 
-**MediSignVerifier** は、.NET 向けのオープンソースライブラリで、日本の電子処方箋に付与された電子署名を検証を目的としています。
+## 機能
+* 電子処方箋データの電子署名を検証します。
+  (ES-BES, ES-T, ES-XL , EX-A)
+* 署名時刻、署名者情報などの署名情報を取得します。
+* XAdESのXMLスキーマの検証を行います。
+* ライブラリ形式およびコマンド形式の２つを提供しています。
 
-**対応フレームワーク:**
+## Copyright
+本プログラムは、Findex Inc.(https://findex.co.jp)の著作物です。
 
+## 対応フレームワーク
 * .NET Standard 2.1
 * .NET Framework 4.6.2
 
-**機能:**
-
-* 電子処方箋データの電子署名を検証します。
-* 署名時刻、署名者情報などの署名情報を取得します。
-
-**今後の予定:**
-* 電子処方箋以外の文書への対応を予定しています。
-
-**プロジェクト説明:**
-1. MediSignVerifier
-ライブラリ本体、署名の検証を実施します。
-1. EPDVerifyCmd
-コマンドによる署名を実施し、結果をXMLファイルとしてレポートします。内部的にはMediSignVerifierを利用しています。
-1. MediSignVerifier.Tests
-テスト用プロジェクトになります。
+## 取得先
+|取得先|URL|
+|---|---|
+|**NuGet**| https://www.nuget.org/packages/MediSignVerifier<br/>(ライブラリのみ)|
+|**GitHub**| https://github.com/findex-inc/MediSignVerifier/releases|
 
 
-**使用方法:**
-1. ソースコードに以下のようなコードを追加します。
+## プロジェクト(program source)
+|取得先|URL|
+|---|---|
+|**EPDVerifyCmd**| コマンドによる電子署名検証の実施します。検証結果をXMLファイル形式のレポートを作成します。内部的にはMediSignVerifierをライブラリとして利用しています。 |
+|**MediSignVerifier**| ライブラリ本体、署名検証処理はここに記載されています。|
+|**MediSignVerifier.Tests**| MediSignVerifierに対する単体テスト用プロジェクトになります。|
+
+
+## 使用方法
+ライブラリの利用例を記載します。
 
 ```csharp
 using System;
-using System.IO;
-using System.Linq;
 using System.Text;
 using NLog;
 using SignatureVerifier;
 
+// <summary>検証メソッド</summary>/
 public void Verify(Options options)
 {
     _logger.Trace("Start.");
@@ -56,6 +62,7 @@ public void Verify(Options options)
     return;
 }
 
+// <summary>検証結果の受取</summary>/
 private static SignatureVerificationResult VerifyDocument(Options options, VerificationConfig config, SignedDocumentXml doc)
 {
     var verifier = new SignatureVerifier.SignatureVerifier(config);
@@ -72,21 +79,18 @@ private static SignatureVerificationResult VerifyDocument(Options options, Verif
 }
 
 ```
-**nugetパッケージの取得方法:**
-
-
-**コマンド説明:**
-
-
-**制限事項:**
+## 制限事項
 * 電子処方箋に使われているXAdES形式にのみ対応してます。
 * ネットワークを介した検証は行っていません。
+  
+## 今後の予定
+* 電子カルテ状況共有サービスに対する文書への対応
+  
 
-
-**免責事項:**
+## 免責事項
 本ソフトウェアは、現状のまま提供され、明示または黙示を問わず、いかなる種類の保証もありません。
 本ソフトウェアの使用に起因または関連して発生したいかなる損害（直接的、間接的、偶発的、特別、結果的、懲罰的なものを含むがこれらに限定されない）についても、作者は一切の責任を負いません。
 
-
-
+## 問い合わせ
+本件ライブラリに対する問い合わせは、GitHub Issue(https://github.com/findex-inc/MediSignVerifier/issues)より行ってください。
 
