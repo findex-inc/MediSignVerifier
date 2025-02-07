@@ -18,9 +18,9 @@
 * .NET Framework 4.6.2
 
 ## 取得先
-|取得先|URL|
-|---|---|
-|**NuGet**| https://www.nuget.org/packages/MediSignVerifier<br/>(ライブラリのみ)|
+|取得先|URL|備考|
+|---|---|---|
+|**NuGet**| https://www.nuget.org/packages/MediSignVerifier|ライブラリのみ|
 |**GitHub**| https://github.com/findex-inc/MediSignVerifier/releases|
 
 
